@@ -10,8 +10,9 @@ namespace ArrayProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter any Option \n 1.ArrayLength \n 2 .FindMaxMinInElements " +
-                "\n 3 . Showing Negative Elements \n 4 .SumOfAllElements");
+            Console.WriteLine("Enter any Option \n 1.ArrayLength \n 2.FindMaxMinInElements " +
+                "\n 3.Showing Negative Elements \n 4.SumOfAllElements " +
+                "\n 5.FindAndCountDuplicateElements");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,6 +31,12 @@ namespace ArrayProblem
                 case 4:
                     SumOfElements sum = new SumOfElements();
                     sum.Sum();
+                    break;
+                case 5:
+                    FrequencyOfElements frequency = new FrequencyOfElements();
+                    frequency.Frequency();
+                    break;
+                default:
                     break;
             }
             Console.ReadLine();
