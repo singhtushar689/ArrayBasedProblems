@@ -14,12 +14,12 @@ namespace ArrayProblem
             Console.WriteLine("Enter any Option \n 1.ArrayLength \n 2.FindMaxMinInElements " +
                 "\n 3.Showing Negative Elements \n 4.SumOfAllElements " +
                 "\n 5.FindAndCountDuplicateElements \n 6.TakingElementsFromUser " +
-                "\n 7.MergingOneArrayIntoAnother");
+                "\n 7.Merging Array");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                   FindLengthOfArray arr = new FindLengthOfArray(); 
+                    FindLengthOfArray arr = new FindLengthOfArray();
                     arr.ArrayLength();
                     break;
                 case 2:
@@ -47,11 +47,11 @@ namespace ArrayProblem
                     merge.Merge();
                     break;
                 default:
-                    break; 
+                    break;
             }
             Console.ReadLine();
         }
     }
 }
-    
+
 
