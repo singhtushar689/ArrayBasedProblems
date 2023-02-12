@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,8 @@ namespace ArrayProblem
         {
             Console.WriteLine("Enter any Option \n 1.ArrayLength \n 2.FindMaxMinInElements " +
                 "\n 3.Showing Negative Elements \n 4.SumOfAllElements " +
-                "\n 5.FindAndCountDuplicateElements");
+                "\n 5.FindAndCountDuplicateElements \n 6.TakingElementsFromUser " +
+                "\n 7.MergingOneArrayIntoAnother");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -36,8 +38,16 @@ namespace ArrayProblem
                     FrequencyOfElements frequency = new FrequencyOfElements();
                     frequency.Frequency();
                     break;
-                default:
+                case 6:
+                    TakingElementsFromUser user = new TakingElementsFromUser();
+                    user.UserInput();
                     break;
+                case 7:
+                    Merging merge = new Merging();
+                    merge.Merge();
+                    break;
+                default:
+                    break; 
             }
             Console.ReadLine();
         }
