@@ -14,7 +14,7 @@ namespace ArrayProblem
             Console.WriteLine("Enter any Option \n 1.ArrayLength \n 2.FindMaxMinInElements " +
                 "\n 3.Showing Negative Elements \n 4.SumOfAllElements " +
                 "\n 5.FindAndCountDuplicateElements \n 6.TakingElementsFromUser " +
-                "\n 7.Merging Array");
+                "\n 7.Merging Array \n 8.Reversing an Array \n 9. 2ndLargestAnd2ndSmallest");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -45,6 +45,14 @@ namespace ArrayProblem
                 case 7:
                     Merging merge = new Merging();
                     merge.Merge();
+                    break;
+                case 8:
+                    Reverse reverse = new Reverse();
+                    reverse.Rev();
+                    break;
+                case 9:
+                    _2ndMaxMin maximum = new _2ndMaxMin();
+                    maximum.MaxMin();
                     break;
                 default:
                     break;
